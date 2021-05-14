@@ -1,0 +1,53 @@
+.main_title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    
+}
+
+.your_account .nav-tabs {
+    border-bottom: none !important;
+}
+
+.ml-3, .mx-3 {
+    margin-left: 1rem!important;
+}
+.nav-link{
+    color: black;
+}
+
+.centred{
+    padding-left:200px;
+    padding-right:200px;
+}
+
+.pl-3, .px-3 {
+    padding-left: 1rem!important;
+}
+.mr-5, .mx-5 {
+    margin-right: 3rem!important;
+}
+
+.cc-title_block_input{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
