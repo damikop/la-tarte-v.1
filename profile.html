@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn.crello.com/project-previews/5eb4ac70-2f51-49b7-bd9d-db7900c57694_1024.png" width="45" height="45" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cakes</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pastries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pastry houses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Delivery</a>
+              </li>
+            
+          </ul>
+          <form class="form-inline justify-content-center" style="text-align: center;">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="topnav-right" id="navbarCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img class="pull-right" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" width="30" height="30" alt="">
+                    </a>
+                  </li>
+                <li id="heart_menu" class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img class="pull-right" src="heart.png" width="30" height="30" alt="">
+                    </a>
+                </li>
+                <li nav-item>
+                  <a class="nav-link" href="#">
+                    <img class="pull-right" src="https://cdn2.iconfinder.com/data/icons/web-solid/32/user-512.png" width="30" height="30" alt="">
+                  </a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      
+<div class="pl-3 pl-lg-4 pb-3 row no-gutters">
+  <div class="col-auto col-md-6 mb-1">
+    <h1>
+      <span class="main_title">Personal area</span>
+    </h1>
+  </div>
+</div>
+
+<div class="your_account">
+  <ul class="ml-3 ml-lg-4 nav nav-tabs your-account-tab col-12 col-md-8" id="accountTab" role="tabList">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active tab_title_nav" id="account_profile_tab" data-toggle="tab" href="#" title="#account_profile" role="tab" area-controls="account_profile" aria-selected="true">
+        Profile
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link tab_title_nav" id="account_orders_tab" data-toggle="tab" href="#" title="#account_orders" role="tab" area-controls="account_orders" aria-selected="false">
+        Orders
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link tab_title_nav" id="account_bonus_tab" data-toggle="tab" href="#" title="#account_bonus" role="tab" area-controls="account_bonus" aria-selected="false">
+        Bonuses
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link tab_title_nav" id="account_discount_tab" data-toggle="tab" href="#" title="#account_discount" role="tab" area-controls="account_discount" aria-selected="false">
+        Discounts
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="centred ">
+<div class="mx-auto ml-lg-4 tab-content" id="tabAccount">
+  <div class="tab-pane show active" id="account_profile" role="tabpanel" aria-labelledby="account_profile_tab">
+    <p class="cc-title_block_input mt-4">Personal data</p>
+    <form id="upd_account_info" class="needs-validation" method="post" action="/" novalidate>
+    <input name="__RequestVertificationToken" type="hidden">
+  
+    <div class="form-group">
+      <label class="cc-input-title" for="name">
+        Name
+        <span class="required" aria-required="true">*</span>
+      </label>
+      <input type="text" name="name" class="form-control col-12 col-md-8 col-lg-5 col-xl-4" id="name" value="" required>
+      <div class="invalid-feedback">
+        You did not provide a name
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="cc-input-title" for="phone">
+        Number
+        <span class="required" aria-required="true">*</span>
+      </label>
+      <input type="telt" name="phone" class="form-control col-12 col-md-8 col-lg-5 col-xl-4 phone_input" id="phone" value="" placeholder="+7 ___ ___ __ __" aria-describedby="phoneHelp" required>
+
+      <div class="invalid-feedback">
+        Please provide a correct number
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="cc-input-title" for="email">
+        Email
+        <span class="required" aria-required="true">*</span>
+      </label>
+      <input type="email" name="email" class="form-control col-12 col-md-8 col-lg-5 col-xl-4" id="email" value="" aria-describedby="emailHelp" required>
+      <div class="invalid-feedback">
+        Please provide a correct email
+      </div>
+    </div>
+
+    <div class="mb-4 mr-3 row col-12 col-md-8 col-lg-5 col-xl-4">
+      <div class="col-12 col-md-6 pl-0">
+        <label for="date_birthday" class="cc-input-title mr-2">
+          Date of birthday
+        </label>
+        <input class="form-control hasDatepicker" value="" name="birthday" id="date_birthday" type="text">
+      </div>
+    </div>
+
+    <button type="submit" class="btn cc-btn-submit btn-dark mb-5 mt-4">
+      Save changes
+    </button>
+  </div>
+
+<p class="cc-title_block_input">Change the password</p>
+<form action="/" id="upd_account_password" class="needs-validation" method="post" novalidate>
+<input name="__RequestVertificationToken" type="hidden" value="">
+
+
+<div class="form-group">
+  <label for="oldpassword" class="cc-input-title">
+    Current password
+    <span class="required" aria-required="true">*</span>
+  </label>
+  <input type="password" class="form-control col-12 col-md-8 col-lg-5 col-xl-4" name="oldpassword" aria-descridebly="emailHelp" required>
+<div class="invalid-feedback">Old password is incorrect</div>
+</div>
+
+<div class="form-group">
+  <label class="cc-input-title" for="newpassword1">New password
+    <span class="required" aria-required="true">*</span>
+  </label>
+  <input type="password" class="form-control col-12 col-md-8 col-lg-5 col-xl-4" id="newpassword1" aria-describedby="emailHelp" required>
+  <small id="newpassword1" class="form-text text-muted">Minimal length - 6 symbols</small>
+  <div class="invalid-feedback"></div>
+</div>
+
+<div class="form-group">
+  <label class="cc-input-title" for="newpassword2">Repeat new password
+    <span class="required" aria-required="true">*</span>
+  </label>
+  <input type="password" class="form-control col-12 col-md-8 col-lg-5 col-xl-4" id="newpassword2" aria-describedby="emailHelp" required>
+  
+  <div class="invalid-feedback"></div>
+</div>
+
+<button type="submit" class="btn cc-btn-submit btn-dark mb-5 mt-4">
+  Save changes
+  <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+</button>
+</form>
+
+<p class="cc-title_block_input">Delivery address</p>
+<button class="btn btn-outline-dark mb-3">
+  <span>Add an address</span>
+</button>
+<form action="/" class="needs-validation" method="post" novalidate>
+<input type="hidden" name="" value="">
+<input type="hidden" class value="1" id="is_account_page">
+<div id="addressWrapper" class="row col-12 col-md-8 col-lg-5 col-xl-4"></div>
+
+</form>
+
+
+
+
+
+  <footer class="pl-4 pl-sm-0 pr-4 pr-sm-0 border-top">
+    <div class="row pt-4 d-flex">
+      <div class="col-auto order-md-5 pl-3">
+        <img src="https://cdn.crello.com/project-previews/5eb4ac70-2f51-49b7-bd9d-db7900c57694_1024.png" width="90" height="90" alt="">
+      </div>
+    
+    <div class="col-auto order-md-6 mr-5 pl-3">
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <span style="font-family: 'Farro', sans-serif;" class="footer_link_title_nohover text-uppercase">Contacts</span>
+        </li>
+        <li class="mb-2">
+          <p>87088141780</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-auto pl-3 pl-lg-5 order-md-1">
+      <p></p>
+    </div>
+    <div class="col-auto oder-md-2 pl-3">
+      <p style="font-family: 'Farro', sans-serif;">Don’t wait until it’s too late. <br> Eat that slice of cake!</p>
+      
+    </div>
+    <div class="col-auto oder-md-2 pl-3">
+      <p style="font-family: 'Farro', sans-serif; text-align:center;">Follow us</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="flex-grow-1 order-md-4 d-none d-xl-block"></div>
+
+  </div>
+  </footer>
+
+
+  </form>
+  </div>
+</div>
+
+    
+</body>
+</html>
