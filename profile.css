@@ -38,7 +38,7 @@
 .social-links a{
     display: inline-block;
     height: 40px;
-    width: 40px;
+    width: 35px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
@@ -50,4 +50,24 @@
 .social-links a:hover{
     color: #24262b;
     background-color: #ffffff;
+}
+
+footer .row{
+    display: flex;
+}
+footer .row .col-auto{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+}
+.mx-auto{
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.back{
+    background-image: url(https://i.pinimg.com/originals/9d/c4/49/9dc44930fed1b91f7847d0021a8af2ed.png);
+    background-attachment: fixed;
+    /* background-position: left, right;
+    background-repeat: repeat-y, repeat-y; */
 }
