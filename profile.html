@@ -7,22 +7,29 @@
     <link rel="stylesheet" type="text/css" href="profile.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Profile</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
         <a class="navbar-brand" href="#">
             <img src="https://cdn.crello.com/project-previews/5eb4ac70-2f51-49b7-bd9d-db7900c57694_1024.png" width="45" height="45" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" >
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
+
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Cakes</a>
             </li>
@@ -30,24 +37,28 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Pastries</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Pastry houses</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Delivery</a>
               </li>
             
           </ul>
+
           <form class="form-inline justify-content-center" style="text-align: center;">
             <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search">
             <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
+        
 
-          <div class="topnav-right" id="navbarCollapse">
+          <div class="topnav-right" id="navbarNav">
             <ul class="nav navbar-nav navbar-right">
                   <li class="nav-item">
                     <a class="nav-link" href="#">
@@ -66,6 +77,9 @@
                 </li>
             </ul>
         </div>
+
+      </div>
+
       </nav>
       
          <!-- pl-3 pl-lg-4 pb-3 row no gutters-->
