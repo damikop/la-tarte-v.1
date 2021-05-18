@@ -7,6 +7,7 @@
     
 }
 
+
 .your_account .nav-tabs {
     border-bottom: none !important;
 }
@@ -33,16 +34,46 @@
 .cc-title_block_input{
     font-weight: 500;
     font-size: 22px;
+    
 }
+
+
+
+
+footer{
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 2rem;
+}
+hr.dark{
+    border-top: 1px solid #000000;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+footer a{
+    color: #000000;
+}
+.dark-100{
+    border-top: 1px solid #000000;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+
 
 .social-links a{
     display: inline-block;
-    height: 40px;
+    height: 35px;
     width: 35px;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
+    margin: 0 5px 5px 0;
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
     border-radius: 50%;
     color: black;
     transition: all 0.5s ease;
@@ -52,14 +83,7 @@
     background-color: #ffffff;
 }
 
-footer .row{
-    display: flex;
-}
-footer .row .col-auto{
-    flex: 1;
-    padding: 25px;
-    border: 1px solid white;
-}
+
 .mx-auto{
     background-color: white;
     padding-left: 30px;
@@ -71,3 +95,5 @@ footer .row .col-auto{
     /* background-position: left, right;
     background-repeat: repeat-y, repeat-y; */
 }
+
+
