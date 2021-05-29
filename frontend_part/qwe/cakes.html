@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cakes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Cakes</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn.crello.com/project-previews/5eb4ac70-2f51-49b7-bd9d-db7900c57694_1024.png" width="45" height="45" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/cakes.html">Cakes</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pastries</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pastry houses</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Delivery</a>
+              </li>
+            
+          </ul>
+
+          <form class="form-inline justify-content-center" style="text-align: center;">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search.." aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+        
+
+          <div class="topnav-right" id="navbarNav">
+            <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img class="pull-right" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" width="30" height="30" alt="">
+                    </a>
+                  </li>
+                <li id="heart_menu" class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img class="pull-right" src="image/heart.png" width="30" height="30" alt="">
+                    </a>
+                </li>
+                <li nav-item>
+                  <a class="nav-link" href="#">
+                    <img class="pull-right" src="https://cdn2.iconfinder.com/data/icons/web-solid/32/user-512.png" width="30" height="30" alt="">
+                  </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+      </nav>
+
+
+      <!--content  -->
+
+<div class="page">
+    <div class="content">
+        <div class="container w-100 mr-auto ml-auto" style="padding-right:15px; padding-left: 15px; max-width:720px;">
+            <div class="list-group" style="margin-left: -15px !important; margin-right:-15px !important;">
+                <p class="list-group-item" style="font-weight: bolder; text-transform: uppercase; font-size:90%;padding-left:55px;">Cakes</p>
+            </div>
+
+            <div class="catalog-panel d-flex flex-row justify-content-between align-items-center">
+
+              <div class="d-flex flex-row justify-content-start align-items-center">
+
+                <div class="container mt-4">
+
+                  
+                  <div class="row">
+                    <div class="col-md-6">
+                     Sorting
+                  </div>
+                  <div class="col-md-6">
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/sort-512.png" height="20" width="20" style="cursor:pointer;"   alt="">
+                  </div>           
+                  </div>
+
+                  <div class="sort_list">
+                    <a href="/cakes.html" class="btn btn-primary sort_item">по умолчанию</a>
+                    <a href="#" class="btn btn-outline-light sort_item">название (а-я)</a>
+                    <a href="#" class="btn btn-outline-light sort_item">название (я-а)</a>
+                  </div>
+
+                  </div>
+              </div>
+
+              <div class="col-xs-3" style="float:right;">
+                <div class="sort_list">
+                  <a href="/cakes.html" class="btn btn-primary sort_item">по умолчанию</a>
+                  <a href="#" class="btn btn-outline-light sort_item">название (а-я)</a>
+                  <a href="#" class="btn btn-outline-light sort_item">название (я-а)</a>
+                </div>
+
+                
+                <button type="button" class="btn btn-outline-secondary mt-4 mr-3">Compare</button>
+                <button type="button" class="btn btn-outline-secondary mt-4">Selected</button>
+              </div>
+            
+            </div>
+            
+
+
+
+
+            <div class="row category-products" style="margin-bottom: 40px;">
+
+              <!-- napoleon -->
+
+              <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+              <a href="napoleon.html">
+                <div class="card">
+                  <img src="https://www.biscuit.kz/image/catalog/31.08.2020/IMG_6463.jpg" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                  <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                    <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Napoleon</p>
+                  </div>
+                </div>
+                </a>
+                  <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> from 4500 т</p>
+
+                  
+                  <div class="col-xs-4 ml-2 mb-2" >
+                    compare
+                    <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                    
+                  <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                  <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                  </div> 
+                </div>
+
+                <!-- Milk girl -->
+
+                <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                  <a href="milky_girl.html">
+                    <div class="card">
+                      <img src="https://www.biscuit.kz/image/catalog/28.08.2020/IMG_7509.jpg" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                      <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                        <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Milk girl</p>
+                      </div>
+                    </div>
+                    </a>
+                      <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> from 3600 т</p>
+    
+                      
+                      <div class="col-xs-4 ml-2 mb-2" >
+                        compare
+                        <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                        
+                      <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                      <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                      </div> 
+                    </div>
+
+                    <!-- whoopi pie -->
+
+                    <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                      <a href="whoopi_pie.html">
+                        <div class="card">
+                          <img src="https://www.biscuit.kz/image/cache/catalog/31.08.2020/IMG_7761-360x360.jpg" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                          <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                            <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Whoopi pie </p>
+                          </div>
+                        </div>
+                        </a>
+                          <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> from 3850 т</p>
+        
+                          
+                          <div class="col-xs-4 ml-2 mb-2" >
+                            compare
+                            <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                            
+                          <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                          <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                          </div> 
+                        </div>
+
+                        <!-- Red velvet -->
+
+                        <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                          <a href="red_velvet.html">
+                            <div class="card">
+                              <img src="https://api.taptatti.kz/storage/picture/product/1/pictures/4.jpg" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                              <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                                <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Red velvet</p>
+                              </div>
+                            </div>
+                            </a>
+                              <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> 5300 т</p>
+            
+                              
+                              <div class="col-xs-4 ml-2 mb-2" >
+                                compare
+                                <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                                
+                              <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                              <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                              </div> 
+                            </div>
+
+                            <!-- Tiramisu -->
+
+
+                            <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                              <a href="tiramisu.html">
+                                <div class="card">
+                                  <img src="https://api.taptatti.kz/storage/picture/product/10/pictures/107.jpg" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                                  <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                                    <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Tiramisu</p>
+                                  </div>
+                                </div>
+                                </a>
+                                  <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> 4000 т</p>
+                
+                                  
+                                  <div class="col-xs-4 ml-2 mb-2" >
+                                    compare
+                                    <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                                    
+                                  <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                                  <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                                  </div> 
+                                </div>
+
+                                <!-- Honey cake -->
+
+                                <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                                  <a href="honey_cake.html">
+                                    <div class="card">
+                                      <img src="https://api.taptatti.kz/storage/picture/product/3/pictures/8.jpg" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                                      <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                                        <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Honey cake </p>
+                                      </div>
+                                    </div>
+                                    </a>
+                                      <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> 4000 т</p>
+                    
+                                      
+                                      <div class="col-xs-4 ml-2 mb-2" >
+                                        compare
+                                        <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                                        
+                                      <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                                      <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                                      </div> 
+                                    </div>
+
+                                    <!-- Chocolate-banana -->
+
+                                    <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                                      <a href="chocolate_banana.html">
+                                        <div class="card">
+                                          <img src="https://storage.googleapis.com/happytech-public/products/product-842-1.0.png?v=1001" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                                          <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                                            <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Chocolate-banana</p>
+                                          </div>
+                                        </div>
+                                        </a>
+                                          <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> from 6000 т</p>
+                        
+                                          
+                                          <div class="col-xs-4 ml-2 mb-2" >
+                                            compare
+                                            <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                                            
+                                          <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                                          <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                                          </div> 
+                                        </div>
+
+                                        <!-- Snickers -->
+
+                                        <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                                          <a href="snickers.html">
+                                            <div class="card">
+                                              <img src="https://storage.googleapis.com/happytech-public/products/product-896-1.0.png?v=1001" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                                              <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                                                <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Snickers</p>
+                                              </div>
+                                            </div>
+                                            </a>
+                                              <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> from 6500 т</p>
+                            
+                                              
+                                              <div class="col-xs-4 ml-2 mb-2" >
+                                                compare
+                                                <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                                                
+                                              <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                                              <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                                              </div> 
+                                            </div>
+
+                                            <!-- Red velvet -->
+
+                                            <div class="col-4" style="padding-right: 5px; padding-top:5px;">
+                                              <a href="red_velvet_2.html">
+                                                <div class="card">
+                                                  <img src="https://storage.googleapis.com/happytech-public/products/product-830-1.0-m.png" class="card-img-top" style="vertical-align: middle; border-style: none;" alt="">
+                                                  <div class="card-body" style="height: 65px; padding-left: 3px;padding-right:3px">
+                                                    <p class="card-text" style="font-size: 85%; color: #000; text-transform: uppercase; text-align:center;">Red velvet</p>
+                                                  </div>
+                                                </div>
+                                                </a>
+                                                  <p class="ml-3 mb-3" style="font-size: 75%; color: #000; text-align:left;"> from 4500 т</p>
+                                
+                                                  
+                                                  <div class="col-xs-4 ml-2 mb-2" >
+                                                    compare
+                                                    <img style="cursor:pointer;"  src="https://cdn.picpng.com/button/button-white-grey-round-circles-109589.png" height="15" width="15" alt="">
+                                                    
+                                                  <img style="float:right;margin-right: 5px;cursor:pointer;" src="https://cdn.iconscout.com/icon/free/png-256/shopping-cart-452-1163339.png" height="25" width="25" alt="">
+                                                  <img style="float:right;margin-right: 5px;cursor:pointer;" src="image/heart.png" alt="" height="25" width="25">
+                                                  </div> 
+                                                </div>
+                
+
+
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+ <!-- footer -->
+
+ <footer>
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <!-- icon -->
+        <img src="https://cdn.crello.com/project-previews/5eb4ac70-2f51-49b7-bd9d-db7900c57694_1024.png" height="80" width="80" style="border-radius: 40px;" alt=""> 
+        <hr class="dark">
+        <p>87452145723</p>
+        <p>87854555632</p>
+        <p>la'tarte@gmail.com</p>
+      </div>
+
+      <div class="col-md-4">
+        <hr class="dark">
+        <h5>Our hours</h5>
+        <hr class="dark">
+        
+        <p>Monday-Friday: 8am - 6pm </p>
+        <p>Saturday: 9am - 5pm</p>
+        <p>Sunday: closed</p>
+      </div>
+
+      <div class="col-md-4">
+        <hr class="dark">
+        <h5>Made with love</h5>
+        <hr class="dark">
+        
+        <p>Don’t wait until it’s too late. <br> Eat that slice of cake!</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <hr class="dark-100">
+        <h5>&copy; la'tarte.kz</h5>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
